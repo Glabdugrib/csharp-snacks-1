@@ -1,4 +1,28 @@
-﻿// SNACK 4
+﻿// SNACK 5
+{
+    Console.WriteLine("\n*** SNACK 5 *** ");
+
+    Console.WriteLine($"\nInsert a number: ");
+    int input = Convert.ToInt32(Console.ReadLine());
+
+    Console.Write("\nResult: ");
+
+    if (input % 2 == 0)
+    {
+        Console.Write(input);
+    }
+    else
+    {
+        Console.Write(input+1);
+    }
+
+    Console.WriteLine();
+
+    return;
+}
+
+
+// SNACK 4
 {
     Console.WriteLine("\n*** SNACK 4 *** ");
 
