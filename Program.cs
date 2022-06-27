@@ -1,4 +1,39 @@
-﻿// SNACK 5
+﻿// SNACK 10
+{
+    Console.WriteLine($"\nInsert a number: ");
+    int N = Convert.ToInt32(Console.ReadLine());
+
+    Random rnd = new Random();
+
+    for (int i = 0; i < N; i++)
+    {
+        int[] array = new int[10];
+
+        for (int j = 0; j < array.Length; j++)
+        {
+            array[j] = rnd.Next(1, 101);
+        }
+
+        // Stampa array
+        Console.Write($"\nArray {i+1}: [");
+        for (int j = 0; j < array.Length; j++)
+        {
+            Console.Write($"{array[j]}");
+            if(j < array.Length - 1)
+            {
+                Console.Write(", ");
+            }   
+        }
+        Console.Write("]");
+    }
+
+    Console.WriteLine();
+
+    return;
+}
+
+
+// SNACK 5
 {
     Console.WriteLine("\n*** SNACK 5 *** ");
 
