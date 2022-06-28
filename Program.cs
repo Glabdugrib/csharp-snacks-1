@@ -1,4 +1,33 @@
-﻿// SNACK 11
+﻿// SNACK 12
+{
+    bool isEven(int num)
+    {
+        if(num % 2 == 0)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    Console.Write("\nInsert a number: ");
+    int num = Convert.ToInt32(Console.ReadLine());
+
+    Console.Write($"\nNumber {num} is ");
+    if (isEven(num))
+    {
+        Console.Write("even\n");
+    }
+    else
+    {
+        Console.Write("odd\n");
+    }
+
+    return;
+}
+
+
+// SNACK 11
 {
     string GetWord()
     {
