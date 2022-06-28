@@ -1,4 +1,35 @@
-﻿// SNACK 10
+﻿// SNACK 11
+{
+    string GetWord()
+    {
+        Console.Write("\nInsert a word: ");
+        string word = Console.ReadLine();
+        return word;
+    }
+
+    void checkWordsLenght(string word1, string word2)
+    {
+        if(word1.Length == word2.Length)
+        {
+            Console.WriteLine($"\n{word1}, {word2}");
+        }
+        else if(word1.Length > word2.Length)
+        {
+            Console.WriteLine($"\n{word1}");
+        }
+        else
+        {
+            Console.WriteLine($"\n{word2}");
+        }
+    }
+
+    checkWordsLenght(GetWord(), GetWord());
+
+    return;
+}
+
+
+// SNACK 10
 {
     Console.WriteLine($"\nInsert a number: ");
     int N = Convert.ToInt32(Console.ReadLine());
